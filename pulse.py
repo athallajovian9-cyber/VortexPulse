@@ -192,8 +192,8 @@ class VortexPulseApp(tk.Tk):
         self.lbl_sys_sub.pack(anchor="w")
 
         # Telemetry Oscilloscope Canvas
-        canvas_container = tk.Frame(self, bg="#080C14", padx=20, pady=(0, 20))
-        canvas_container.pack(fill=tk.BOTH, expand=True)
+        canvas_container = tk.Frame(self, bg="#080C14", padx=20, pady=10)
+        canvas_container.pack(fill=tk.BOTH, expand=True, pady=(0, 20))
 
         self.canvas = tk.Canvas(canvas_container, bg="#05080E", highlightthickness=1, highlightbackground="#1E293B")
         self.canvas.pack(fill=tk.BOTH, expand=True)
